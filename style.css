@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FUNDO */
+body{
+    background:#f4f4f4;
+}
+
+/* BOTÃO ABRIR */
+.open-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    font-size:20px;
+    background:#333;
+    color:#fff;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:5px;
+    z-index:1001;
+}
+
+/* SIDEBAR */
+.sidebar{
+    position:fixed;
+    left:-260px;
+    top:0;
+    width:260px;
+    height:100%;
+    background:#3b3b3b;
+    color:#fff;
+    transition:0.4s;
+    padding-top:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+/* ATIVO */
+.sidebar.active{
+    left:0;
+}
+
+/* HEADER */
+.sidebar .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px 20px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.close-btn{
+    cursor:pointer;
+    font-size:20px;
+}
+
+/* MENU */
+.menu{
+    list-style:none;
+}
+
+.menu li{
+    padding:15px 20px;
+    border-top:1px solid rgba(255,255,255,0.05);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu li:hover{
+    background:#4a4a4a;
+}
+
+.menu i{
+    margin-right:10px;
+}
+
+/* RODAPÉ */
+.footer{
+    padding:15px 20px;
+    display:flex;
+    gap:15px;
+}
+
+.footer i{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.footer i:hover{
+    color:#ddd;
+}
+
+/* CONTEÚDO */
+.content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    text-align:center;
+}
+
+.content h1{
+    font-size:32px;
+    color:#222;
+    line-height:1.4;
+}
